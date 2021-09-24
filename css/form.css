@@ -1,0 +1,96 @@
+/* Estilos de fontes */
+
+/* Fonte Roboto 700 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* Fonte Montserra 500 */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Montserrat:wght@500&family=Roboto:wght@700&display=swap');
+
+/* Reset */
+a {
+
+	text-decoration: none;
+
+}
+
+ol, ul {
+
+	list-style: none;
+
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main, span {
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+
+}
+
+/* Estilos Gerais */
+h1, h2, h3, label {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+p, a, button, span {
+
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+
+}
+
+body main {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+body main form {
+
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding: 64px;
+  background-color: bisque;
+  border: none;
+  border-radius: 16px;
+
+}
+
+main form h1 {
+
+  margin-bottom: 32px;
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+
+}
+
+main form label {
+
+font-size: 18px;
+color: black;
+margin-bottom: 8px;
+
+}
+
+
+.botoes {
+
+  display:flex;
+  flex-direction: row;
+}
+
+form button {
+
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 5px;
+  color: #ece5dc;
+  padding: 15px;
+  width: 200px;
+
+}

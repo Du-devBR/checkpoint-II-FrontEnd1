@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+
+  <main>
+
+    <form>
+
+      <h1>Preencha os seus dados:</h1>
+
+      <label for="Nome e sobrenome">Nome e sobrenome</label>
+      <input type="text" id="Nome e sobrenome" minlength="100" required>
+
+      <label for="Email">Email</label>
+      <input type="email" id="Email" required placeholder="seuemail@dominio.com">
+
+      <label for="Telefone">Telefone</label>
+      <input type="tel" id="Telefone" required placeholder="(XX) XXXXX-XXXX">
+
+      <label for="Data de nascimento">Data de nascimento</label>
+      <input type="date" id="Data de nascimento" required placeholder="(XX) XXXXX-XXXX">
+
+      <fieldset>
+        <legend>Você é maior de 18 anos??</legend>
+        <label for="radio-sim"><input type="radio" name="sim" value="sim" id="radio-sim">Sim</label>
+        <label for="radio-nao"><input type="radio" name="sim" value="nao" id="radio-nao">Não</label>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Quais pontos você tem interesse na cidade?</legend>
+        <select name="ponto-interesse" id="interesse">
+          <option value="interesse">Lazer</option>
+          <option value="interesse">Estudos</option>
+          <option value="interesse">Familia</option>
+          <option value="interesse">Residência</option>
+          <option value="interesse">Aventura</option>
+          <option value="interesse">Passeio</option>
+        </select>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Quais os seus interesses na cidade</legend>
+        <label for="radio-turista"><input type="radio" name="sim" value="turista" id="radio-turista">Turista</label>
+        <label for="radio-residente"><input type="radio" name="sim" value="residente"
+            id="radio-residente">Residente</label>
+        <label for="radio-estudante"><input type="radio" name="sim" value="estudante"
+            id="radio-estudante">Estudante</label>
+      </fieldset>
+
+      <div class="botoes">
+        <button type="submit">Enviar formulário</button>
+        <button type="reset">Limpar formulário</button>
+      </div>
+
+
+    </form>
+  </main>
+
+</body>
+
+</html>
