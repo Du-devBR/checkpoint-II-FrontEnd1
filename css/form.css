@@ -29,7 +29,7 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img
 }
 
 /* Estilos Gerais */
-h1, h2, h3, label {
+h1, h2, h3, label, legend {
 
     font-family: 'Roboto', sans-serif;
 }
@@ -55,7 +55,6 @@ body main form {
   flex-direction: column;
   width: 800px;
   padding: 64px;
-  background-color: bisque;
   border: none;
   border-radius: 16px;
 
@@ -63,34 +62,77 @@ body main form {
 
 main form h1 {
 
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   color: rgb(0, 0, 0);
-  font-size: 32px;
+  font-size: 24px;
+  text-transform: uppercase;
 
 }
 
-main form label {
+main form h1::after{
+
+  content: "";
+  width: 180px;
+  height: 5px;
+  display: block;
+  background: #fed116;
+  margin: 6px 0 24px 0;
+  
+}
+
+main form label, fieldset, legend {
 
 font-size: 18px;
 color: black;
 margin-bottom: 8px;
+margin-top: 16px;
 
 }
 
+input, select {
+
+  padding: 8px 16px;
+
+}
+
+form input:focus {
+
+
+  transform: scale(1.1);
+}
+
+form input:hover {
+  
+  background-color: #eee9de;
+
+}
 
 .botoes {
 
   display:flex;
   flex-direction: row;
+  gap:24px;
+  margin-top: 24px;
+
 }
 
 form button {
 
-  background-color: #ff7f50;
+  background-color:#fed116;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   color: #ece5dc;
-  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px;
+  transition: .5s;
+  text-transform: uppercase;
   width: 200px;
+
+}
+
+button:hover {
+
+  background-color: #f09a1a;
 
 }
