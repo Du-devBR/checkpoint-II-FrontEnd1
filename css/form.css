@@ -24,7 +24,6 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img
 	margin: 0;
 	padding: 0;
 	border: 0;
-	vertical-align: baseline;
 
 }
 
@@ -34,12 +33,107 @@ h1, h2, h3, label, legend {
     font-family: 'Roboto', sans-serif;
 }
 
-p, a, button, span {
+p, a, button, span, option {
 
     font-family: 'Montserrat', sans-serif;
     line-height: 30px;
 
 }
+
+/* ******************************* Tela 768 ********************************************* */
+
+ @media(max-width: 768px){
+
+  body  main .form h1 {
+
+    font-size: 18px;
+
+   }
+
+   body main .form h1::after {
+
+    width: 100px;
+    height: 5px;
+   }
+
+   main .form button {
+
+    font-size: 12px;
+    width: 300px;
+
+  }
+}
+
+/* ********************************** Tela 425 ********************************************* */
+
+@media(max-width: 425px){
+
+  body main .form {
+
+    width: 90vw;
+    padding: 0;
+    background-color: #F5F5F5;
+
+  }
+
+  body main .form h1 {
+
+   font-size: 16px;
+   text-align: center;
+
+  }
+
+  body main .form h1::after {
+
+   width: 100px;
+   height: 5px;
+   margin: 4px auto;
+
+  }
+
+  .form .informacoes input:focus {
+
+    transform:scaleY(1.2);
+
+   }
+
+  body .form input:focus {
+
+   transform:none;
+
+  }
+
+  form .botoes {
+
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+    margin-top: 24px;
+    align-items: center;
+
+  }
+
+  main form button {
+
+  font-size: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 4px;
+  width: 300px;
+
+}
+
+/* Botão limpar  */
+#limpar {
+
+  background-color: white;
+  color: black;
+
+}
+}
+
+/* **********************************Tela 1440******************************************** */
+
 
 body main {
 
@@ -49,18 +143,20 @@ body main {
 
 }
 
-body main form {
+ main .form {
 
   display: flex;
   flex-direction: column;
-  width: 800px;
-  padding: 64px;
+  width: 70vw;
+  padding: 32px;
   border: none;
   border-radius: 16px;
+  margin: 64px 0;
+  background-color:hsl(0, 0%, 93%);
 
 }
 
-main form h1 {
+main .form h1 {
 
   margin-bottom: 16px;
   color: rgb(0, 0, 0);
@@ -69,7 +165,7 @@ main form h1 {
 
 }
 
-main form h1::after{
+main .form h1::after{
 
   content: "";
   width: 180px;
@@ -77,7 +173,7 @@ main form h1::after{
   display: block;
   background: #fed116;
   margin: 6px 0 24px 0;
-  
+
 }
 
 main form label, fieldset, legend {
@@ -89,20 +185,61 @@ margin-top: 16px;
 
 }
 
-input, select {
+.form .informacoes {
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+
+}
+
+.form .informacoes input {
 
   padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin-top: 16px;
+  outline: none;
 
 }
 
-form input:focus {
+.form .interesse-ponto select {
 
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin-top: 16px;
+  outline: none;
+
+}
+
+
+.form .idade {
+
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0;
+}
+
+
+.form .interesse-cidade {
+
+  margin: 32px 0;
+  padding: 16px 0;
+
+}
+
+.form input:focus {
 
   transform: scale(1.1);
+
 }
 
-form input:hover {
-  
+.form input:hover {
+
   background-color: #eee9de;
 
 }
@@ -116,14 +253,15 @@ form input:hover {
 
 }
 
-form button {
+.form button {
 
   background-color:#fed116;
   border: none;
   border-radius: 20px;
-  color: #ece5dc;
+  color: white;
   cursor: pointer;
   font-weight: bold;
+  font-size: 14px;
   padding: 8px;
   transition: .5s;
   text-transform: uppercase;

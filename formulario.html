@@ -7,36 +7,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato</title>
   <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
+  <header id="header">
+    <a id="logo" href="index.html">Mogi das Cruzes</a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="index.html">Home</a></li>
+
+      </ul>
+    </nav>
+  </header>
 
   <main>
 
-    <form>
+    <form class="form">
 
       <h1>Preencha os seus dados:</h1>
 
-      <label for="Nome e sobrenome">Nome e sobrenome</label>
-      <input type="text" id="Nome e sobrenome" minlength="100" required>
 
-      <label for="Email">Email</label>
-      <input type="email" id="Email" required placeholder="seuemail@dominio.com">
+      <fieldset class="informacoes">
+        <label for="Nome e sobrenome">Nome e sobrenome</label>
+        <input type="text" id="Nome e sobrenome" maxlength="100" required>
 
-      <label for="Telefone">Telefone</label>
-      <input type="tel" id="Telefone" required placeholder="(XX) XXXXX-XXXX">
+        <label for="Email">Email</label>
+        <input type="email" id="Email" required placeholder="seuemail@dominio.com">
 
-      <label for="Data de nascimento">Data de nascimento</label>
-      <input type="date" id="Data de nascimento" required placeholder="(XX) XXXXX-XXXX">
+        <label for="Telefone">Telefone</label>
+        <input type="tel" id="Telefone" required placeholder="(XX) XXXXX-XXXX">
 
-      <fieldset>
-        <legend>Você é maior de 18 anos??</legend>
+        <label for="Data de nascimento">Data de nascimento</label>
+        <input type="date" id="Data de nascimento" required placeholder="(XX) XXXXX-XXXX">
+      </fieldset>
+
+      <fieldset class="idade">
+        <legend>Você é maior de 18 anos?</legend>
         <label for="radio-sim"><input type="radio" name="sim" value="sim" id="radio-sim">Sim</label>
         <label for="radio-nao"><input type="radio" name="sim" value="nao" id="radio-nao">Não</label>
       </fieldset>
 
 
-      <fieldset>
+      <fieldset class="interesse-ponto">
         <legend>Quais pontos você tem interesse na cidade?</legend>
         <select name="ponto-interesse" id="interesse">
           <option disabled selected value> -- selecione uma opção -- </option>
@@ -50,24 +67,25 @@
       </fieldset>
 
 
-      <fieldset>
+      <fieldset class="interesse-cidade">
         <legend>Quais os seus interesses na cidade</legend>
-        <label for="radio-turista"><input type="radio" name="sim" value="turista" id="radio-turista">Turista</label>
-        <label for="radio-residente"><input type="radio" name="sim" value="residente"
+        <label for="radio-turista"><input type="radio" name="sim-interesse" value="turista"
+            id="radio-turista">Turista</label>
+        <label for="radio-residente"><input type="radio" name="sim-interesse" value="residente"
             id="radio-residente">Residente</label>
-        <label for="radio-estudante"><input type="radio" name="sim" value="estudante"
+        <label for="radio-estudante"><input type="radio" name="sim-interesse" value="estudante"
             id="radio-estudante">Estudante</label>
       </fieldset>
 
       <div class="botoes">
-        <button type="submit">Enviar formulário</button>
-        <button type="reset">Limpar formulário</button>
+        <button id="enviar" type="submit">Enviar formulário</button>
+        <button id="limpar" type="reset">Limpar formulário</button>
       </div>
 
 
     </form>
   </main>
-
+  <script src="./script.js"></script>
 </body>
 
 </html>
