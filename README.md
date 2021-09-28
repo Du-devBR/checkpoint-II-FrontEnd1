@@ -5,7 +5,7 @@
 <h1>Integrantes</h1>
 <ul>
 <li>Angelica Lirio - <a href="https://github.com/angelicablirio">Git Angelicablirio</a></li>
-<li>Eduardo Ananias <a href="https://github.com/Du-devBR">Eduardo Ananias</a></li>
+<li>Eduardo Ananias <a href="https://github.com/Du-devBR">Git Du-devBR</a></li>
 <li>Gilvane Noel - <a href="https://github.com/GilvaneDev">Git GilvaneDev</a></li>
 </ul>
 
